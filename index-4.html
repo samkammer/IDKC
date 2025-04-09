@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Import-Export & Distribution Knowledge Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #1e1e1e;
+    }
+    header {
+      background-color: #1a1a2e;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 6rem 2rem;
+      background: linear-gradient(to right, #16213e, #0f3460);
+      color: #ffffff;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin-bottom: 2rem;
+    }
+    .hero a {
+      padding: 1rem 2rem;
+      background: #0f3460;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .hero a:hover {
+      background: #2c73d2;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: slideUp 1.5s ease;
+    }
+    .section h3 {
+      font-size: 2rem;
+      color: #0f3460;
+      margin-bottom: 1rem;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .feature {
+      background: #f2f2f2;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+    .feature h4 {
+      margin-top: 0;
+      color: #16213e;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background: #f9f9f9;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-top: 2rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+    .contact-form button {
+      padding: 1rem;
+      background: #0f3460;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    footer {
+      background: #1a1a2e;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 4rem;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Import-Export & Distribution Knowledge Company</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Trade Disruptions? We’re Your Strategic Edge.</h2>
+  <p>From broker sourcing to full-service logistics and tariff advisory, we help you stay resilient, compliant, and competitive.</p>
+  <a href="#contact">Start with a Free Consultation</a>
+</section>
+
+<section class="section">
+  <h3>What We Offer</h3>
+  <div class="features">
+    <div class="feature">
+      <h4>🔎 Broker Sourcing</h4>
+      <p>Tap into our global network to find the right import/export partners fast — vetted, trusted, and ready to deliver.</p>
+    </div>
+    <div class="feature">
+      <h4>🚚 Logistics Coordination</h4>
+      <p>We manage your shipments end-to-end, from port to door, so you can focus on your business while we handle the complexity.</p>
+    </div>
+    <div class="feature">
+      <h4>📉 Tariff Advisory</h4>
+      <p>Minimize or avoid duties with expert product classification, FTZ strategy, and duty drawback filing.</p>
+    </div>
+    <div class="feature">
+      <h4>🆘 Emergency Response</h4>
+      <p>Supply chain disruption? Get rapid, on-call support to reroute shipments, replace suppliers, or meet urgent compliance.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h3>Contact Us</h3>
+  <form class="contact-form" action="https://formspree.io/f/mnqeyvgr" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 The Import-Export & Distribution Knowledge Company. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
